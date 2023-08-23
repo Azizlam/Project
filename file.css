@@ -1,0 +1,228 @@
+.topnav {
+    background-color: #b781f7;
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 20%;
+    height: 80px;
+    border: 1px;
+    border-color: #7300ff;
+  }
+  
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 80px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    
+   
+  }
+  .topnav button{
+  margin-left: 50px;
+margin-top: 20px;
+margin-right: 50px;}
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:  #cab3e7;
+    ;
+    color: purple;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #cab3e7;
+    color: white;
+  }
+  .pic{
+    margin-right: 150px;
+    
+  }
+  
+  .catchph{display: flex;
+width: 100%;
+height: 689px;
+background-color: #e3d6f1;
+fill-opacity: 0.6;
+justify-content: center;
+gap: 100px;
+align-items: center;
+
+}
+.catchph2{align-self: center;
+    
+}
+.img1{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.catchph2 h1{
+    color: #af73f8;
+    font-size: 60px;
+    text-align: center;
+    margin-left: -10px;
+    font-weight: bold;
+   
+}
+.catchph2 p{color:  #af73f8;
+font-size: 20px;
+text-align: center;
+width: 567px;
+height: 397px;
+}
+
+
+
+.head {
+  display: flex;
+  flex-direction: column;
+  background-color: #b781f7;
+  align-items: center;
+  height: 800px;
+}
+
+.how {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure the content takes up the full width */
+}
+
+.p1 {
+  width: calc(33.33% - 20px); /* Adjust width to create equal spacing with some margin */
+  padding: 20px; /* Add padding for better spacing */
+  font-size: 20px;
+  text-align: center;
+  color:  #e3d6f1 ;
+}
+
+.p1 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.p1 h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.head h1{font-size: 45px;
+color: #e3d6f1 ;
+margin-bottom: -10px;
+margin-top: 5px;
+font-weight: bold;}
+.head h2 {
+  font-size: 32px;
+color: #e3d6f1 ;
+font-weight: bold;
+
+}
+
+
+
+.how2{display: flex;
+background-color: #e3d6f1;
+
+justify-content: space-around;
+align-items: center;
+}
+.how3 {width: 500px;
+font-size: 32px;
+text-align: center;}
+.how3 h1,p{color: #af73f8;}
+.how3 button{margin-top: 20px;}
+.create{display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #b781f7;
+  height:650px ;
+      }
+.create h1{font-size: 40px;
+color:#e3d6f1 ;}
+.create button {margin-top:-10px;}
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* White background */
+  padding: 20px;
+  border: 6px solid  #e3d6f1; /* Purple border */
+  border-radius: 10px;
+  max-width: 900px; /* Set a maximum width for better readability */
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3)
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-image:url(quiz.svg)
+}
+
+.container li {
+  font-size: 35px;
+  color:  #e3d6f1;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #a37ac0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.footer-content img {
+  max-width: 100px;
+  height: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer-content nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer-content nav a {
+  text-decoration: none;
+  color: #f1ebf7;
+  font-weight: bold;
+}
+.butt {
+  background-color: #fff;
+  color: #9c72e0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.butt:hover {
+  background-color: #9c72e0;
+  color: #fff;
+}

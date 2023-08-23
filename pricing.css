@@ -1,0 +1,177 @@
+.topnav {
+    background-color: #b781f7;
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 20%;
+    height: 80px;
+    border: 1px;
+    border-color: #7300ff;
+  }
+  
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 80px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    
+   
+  }
+  .topnav button{
+  margin-left: 50px;
+margin-top: 20px;
+margin-right: 50px;
+background-color: #fff;
+    color: #9c72e0;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;}
+.topnav button:hover{background-color: #9c72e0;
+    color:#fff;
+    ;}
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:  #cab3e7;
+    ;
+    color: purple;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #cab3e7;
+    color: white;
+  }
+  .pic{
+    margin-right: 150px;
+    
+  }
+  .a{
+    text-align: center;
+    color: #b781f7;
+    background-color: #e3d6f1;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+    }
+
+
+
+
+  .pricing-container {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e3d6f1;
+  }
+
+  .pricing-box {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+  }
+
+  .pricing-box h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #9c72e0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+
+  .pricing-box p {
+      margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:#9c72e0;
+  }
+
+  .pricing-box .price {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color : #9c72e0;
+  }
+
+   .pricing-box button {
+    background-color: #9c72e0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+ .pricing-box button:hover {
+    background-color: #fff;
+    color:#9c72e0;
+    ;
+  }
+  footer {
+    background-color: #a37ac0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  .footer-content img {
+    max-width: 100px;
+    height: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  
+  .footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-content nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .footer-content nav a {
+    text-decoration: none;
+    color: #f1ebf7;
+    font-weight: bold;
+  }

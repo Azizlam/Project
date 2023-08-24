@@ -7,68 +7,7 @@
   <link rel="stylesheet" href="inscription.css">
 </head>
 <body>
-    <script>
-        // JavaScript code
-        const signupForm = document.getElementById("signupForm");
-    
-        signupForm.addEventListener("submit", function(event) {
-          const nameInput = document.getElementById("name");
-          const surnameInput = document.getElementById("surname");
-          const usernameInput = document.getElementById("username");
-          const emailInput = document.getElementById("email");
-          const dateInput = document.getElementById("date");
-          const passwordInput = document.getElementById("password");
-          const nameError = document.getElementById("nameError");
-          const surnameError = document.getElementById("surnameError");
-          const usernameError = document.getElementById("usernameError");
-          const emailError = document.getElementById("emailError");
-          const passwordError = document.getElementById("passwordError");
-          const dateError = document.getElementById("dateError");
-    
-          // Reset previous error messages
-          usernameError.textContent = "";
-          emailError.textContent = "";
-          passwordError.textContent = "";
-          dateError.textContent ="";
-          surnameError.textContent="";
-          nameError.textContent="";
-          
-
-          // Perform form validation
-          if (usernameInput.value.trim() === "") {
-            usernameError.textContent = "Username is required";
-            event.preventDefault();
-          }
-          if (nameInput.value.trim() === "") {
-            nameError.textContent = "Name is required";
-            event.preventDefault();
-          }
-          if (surnameInput.value.trim() === "") {
-            surnameError.textContent = "Surname is required";
-            event.preventDefault();
-          }
-          if (dateInput.value.trim() === "") {
-            dateError.textContent = "BirthDate is required";
-            event.preventDefault();
-          }
-    
-
-          if (emailInput.value.trim() === "") {
-            emailError.textContent = "Email is required";
-            event.preventDefault();
-          }
-    
-          if (passwordInput.value.trim() === "") {
-            passwordError.textContent = "Password is required";
-            event.preventDefault();
-          }
-        });
-        document.getElementById("signup-button").addEventListener("click", function() {
-            alert("Thank you for signing up!");
-        });
-        
-      </script>
-      <div class="topnav">
+    <div class="topnav">
         <div class="pic"><img src="Logo.png" alt="logo" height="80px"></div>
         <a  href="index.html">Home</a>
         <a href="works.html">How it works</a>
@@ -76,57 +15,98 @@
         <a href="price.html">Subcription</a>
         <div class="connect"><button class="butt" onclick="document.location='inscription.html'">connect</button></div>
     </div>
-<div class="user">
-    <div class="login">
-        <h2>login</h2>
-        <form class="signup-form" id="signupForm">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <div id="emailError" class="error-message"></div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-        <div id="passwordError" class="error-message"></div>
-        <button type="submit" id="signup-button">Login</button>
-
+    <div class="user">
+      <div class="login">
+          <h2>Login</h2>
+          <form class="signup-form" id="loginForm">
+              <label for="email1">Email</label>
+              <input type="email" id="email1" name="email" required>
+              
+              <label for="password1">Password</label>
+              <input type="password" id="password1" name="password" required>
+              
+              <button type="submit" id="login-button">Login</button>
+          </form>
+      </div>
+     <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form class="signup-form" id="signupForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required>
+        
+          <label for="Surname">Surname</label>
+          <input type="text" id="surname" name="Surname" required>
+          
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+          
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          
+          <label for="bithdate">Birthdate</label>
+          <input type="date" id="date" name="date" required>
+         
+          <label for="subscription">Subscription Package</label>
+          <select id="subscription" name="subscription">
+            <option value="Free">Free</option>
+            <option value="Home">Home</option>
+            <option value="Classic">Classic</option>
+            <option value="Pro">Pro</option>
+            <option value="Elite">Elite</option>
+          </select>
+  
+          <button type="submit" id="signup-submit-button">Sign Up</button>
         </form>
-
     </div>
-  <div class="signup-container">
-    <h2>Sign Up</h2>
-    <form class="signup-form" id="signupForm">
-        <label for="name">Name</label>
-        <input type="text" id="Name" name="Name" required>
-        <div id="nameError" class="error-message"></div>
-        <label for="Surname">Surname</label>
-        <input type="text" id="Surname" name="Surname" required>
-        <div id="surnameError" class="error-message"></div>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-        <div id="usernameError" class="error-message"></div>
-  
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <div id="emailError" class="error-message"></div>
-  
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-        <div id="passwordError" class="error-message"></div>
-        <label for="bithdate">Birthdate</label>
-        <input type="date" id="date" name="date" required>
-        <div id="dateError" class="error-message"></div>
-        <label for="subscription">Subscription Package</label>
-        <select id="subscription" name="subscription">
-          <option value="Free">Free</option>
-          <option value="Home">Home</option>
-          <option value="Classic">Classic</option>
-          <option value="Pro">Pro</option>
-          <option value="Elite">Elite</option>
-        </select>
-
-        <button type="submit" id="signup-button">Sign Up</button>
-      </form>
   </div>
-</div>
+  
+  
+  <script>
+      document.getElementById('loginForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          const email = document.getElementById('email1').value;
+          const password = document.getElementById('password1').value;
+  
+          // You can add actual login validation here
+          // For demonstration purposes, let's assume valid login
+          alert('Logged in successfully ');
+          document.getElementById('loginForm').reset();
+      });
+  
+      document.getElementById('signupForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          const name = document.getElementById('name').value;
+          const surname = document.getElementById('surname').value;
+          const username = document.getElementById('username').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          const birthdate = document.getElementById('date').value;
+          const subscription = document.getElementById('subscription').value;
+  
+          // You can add more validation here
+  
+          // For demonstration purposes, display an alert with the signup details
+          const signupDetails = `
+              Name: ${name}
+              Surname: ${surname}
+              Username: ${username}
+              Email: ${email}
+              Birthdate: ${birthdate}
+              Subscription: ${subscription}
+          `;
+          alert('Sign up successful!\n\n' + signupDetails);
+  
+          // You can reset the form here if needed
+          document.getElementById('signupForm').reset();
+      });
+  </script>
+
+
 <footer>
     <div class="footer-content">
         <img src="Logo.png" alt="logo">

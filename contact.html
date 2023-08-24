@@ -6,55 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
 </head>
-<script>
-     // JavaScript code
-     const signupForm = document.getElementById("signupForm");
-    
-    signupForm.addEventListener("submit", function(event) {
-      const textInput = document.getElementById("text");
-    
-      const usernameInput = document.getElementById("username");
-      const emailInput = document.getElementById("email");
-      
-      const textError = document.getElementById("textError");
-      const usernameError = document.getElementById("usernameError");
-      const emailError = document.getElementById("emailError");
-      
-      // Reset previous error messages
-      usernameError.textContent = "";
-      emailError.textContent = "";
-      textError.textContent="";
-      
-
-      // Perform form validation
-      if (usernameInput.value.trim() === "") {
-        usernameError.textContent = "Username is required";
-        event.preventDefault();
-      }
-      if (textInput.value.trim() === "") {
-        textError.textContent = "   Text is required";
-        event.preventDefault();
-      }
-      
-      
-      if (emailInput.value.trim() === "") {
-        emailError.textContent = "Email is required";
-        event.preventDefault();
-      }
-
-      
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-            const contactForm = document.getElementById("contact");
-
-            contactForm.addEventListener("submit", function(event) {
-                event.preventDefault();
-                alert("Form submitted successfully!");
-                contactForm.reset();
-            });
-        });
-    
-</script>
+<style>
+  .error-message {
+      color: red;
+  }
+  .success-message {
+      color: green;
+  }
+</style>
 <body>
     <div class="topnav">
         <div class="pic"><img src="Logo.png" alt="logo" height="80px"></div>
@@ -65,24 +24,49 @@
         <div class="connect"><button class="butt" onclick="document.location='inscription.html'">connect</button></div>
     </div>
     <div class="body">
-    <h1>Contact</h1>
-     <div class="contact">
-        <h2>Contact us </h2>
-        <form class="contact-form" id="contact">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-        <div id="usernameError" class="error-message"></div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <div id="emailError" class="error-message"></div>
-        <label for="message">message</label>
-        <textarea id="text" name="text" rows="22" required></textarea>
-        <div id="textError" class="error-message"></div>
-        <button type="submit" id="submit-button">Submit</button>
-
-        </form>
-     </div>
-    </div>
+      <h1>Contact</h1>
+      <div class="contact">
+          <h2>Contact us</h2>
+          <form class="contact-form" id="contact-form">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+              
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="22" required></textarea>
+              
+              <button type="submit" id="submit-button">Submit</button>
+          </form>
+      </div>
+      <div id="successMessage" class="success-message"></div>
+  </div>
+  
+  <script>
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          const username = document.getElementById('username').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+          const successMessage = document.getElementById('successMessage');
+  
+          // You can add more validation here
+  
+          if (!username || !email || !message) {
+              successMessage.textContent = ''; // Clear any previous success message
+              document.getElementById('successMessage').textContent = 'Please fill in all fields.';
+          } else {
+              // Perform your actual form submission here
+              // For demonstration purposes, display a success message
+              successMessage.textContent = 'Form submitted successfully!';
+              alert('Form submitted successfully!');
+              // You can reset the form here if needed
+              document.getElementById('contact-form').reset();
+          }
+      });
+  </script>
+ 
     <footer>
         <div class="footer-content">
             <img src="Logo.png" alt="logo">
